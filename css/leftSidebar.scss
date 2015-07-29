@@ -1,0 +1,51 @@
+.sidebar {
+	float: left;
+	width: 250px;
+	background: #DDD;
+	min-height: 100vh;
+}
+
+.sideBar-title {
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font-weight: bold;
+	color: #555;
+}
+
+.myList-itemIcon {
+	float: left;
+}
+
+.myList-itemEdit {
+	float: right;
+}
+
+.myLists-itemTemplate {
+
+}
+
+.myList-newButton {
+	height: 30px;
+    background-color: #BBB;
+    text-align: center;
+
+    > span {
+    	line-height: 30px;
+    }
+}
+
+.myList-itemIcon,
+.myList-itemEdit,
+.myList-itemTitle {
+	line-height: 30px;
+}
+
+.myList-title {
+	@extend .truncate;
+}
+
+
+.myLists-item {
+	height: 30px;
+}

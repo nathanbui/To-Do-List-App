@@ -1,0 +1,70 @@
+@import url(_normalise.css);
+@import url(_reset.css);
+.sidebar {
+  float: left;
+  width: 250px;
+  background: #DDD;
+  min-height: 100vh; }
+
+.sideBar-title {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #555; }
+
+.myList-itemIcon {
+  float: left; }
+
+.myList-itemEdit {
+  float: right; }
+
+.myList-newButton {
+  height: 30px;
+  background-color: #BBB;
+  text-align: center; }
+  .myList-newButton > span {
+    line-height: 30px; }
+
+.myList-itemIcon,
+.myList-itemEdit,
+.myList-itemTitle {
+  line-height: 30px; }
+
+.myLists-item {
+  height: 30px; }
+
+#listItems-big > ul {
+  display: none; }
+
+div, p, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif; }
+
+h1 {
+  font-size: 2em; }
+
+h2 {
+  font-size: 1.5em; }
+
+.clearfix:after {
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both; }
+
+.truncate, .myList-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.myLists-item {
+  cursor: pointer; }
+
+.hide {
+  display: none; }
+
+.bold {
+  font-weight: bold; }
+
+/*# sourceMappingURL=style.css.map */

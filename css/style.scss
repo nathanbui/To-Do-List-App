@@ -1,0 +1,44 @@
+@import '_normalise.css';
+@import '_reset.css';
+@import 'leftSidebar';
+@import 'rightSide';
+
+div,p,h1,h2,h3,h4,h5,h6 {
+	font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+.clearfix:after { 
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
+.truncate {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.myLists-item {
+	cursor: pointer;
+}
+
+.hide {
+	display: none;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+

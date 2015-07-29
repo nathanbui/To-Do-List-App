@@ -1,0 +1,84 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<title>To Do App</title>
+	<link href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" type="text/css" />
+	<link href="css/style.css" rel="stylesheet" />
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700' rel='stylesheet' type='text/css'>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+</head>
+<body class="body">
+	<!-- Sidebar-->
+	<div class="sidebar">
+		<h2 class="sideBar-title">My Lists</h2>
+		<div class="myList-newButton">
+			<span class="fa fa-plus"></span>
+			<span class="bold">New List</span>
+		</div>
+		<div class="myList-newForm hide">
+			<input class="myList-newInput">
+		</div>
+		<ul id="myLists">
+			<li class="myLists-item clearfix" data-list="0">
+				<div class="myList-itemIcon">
+					<span class="fa fa-list-ul"></span>
+				</div>
+				<div class="myList-itemEdit">
+					<span class="fa fa-pencil"></span>
+				</div>
+				<div class="myList-itemTitle">
+					<p class="myList-title">this is some kind of font and stuff and lots of words abotu tjiaosjdasoidjas dj</p>
+				</div>
+			</li>
+			<li class="myLists-item clearfix" data-list="1">
+				<div class="myList-itemIcon">
+					<span class="fa fa-list-ul"></span>
+				</div>
+				<div class="myList-itemEdit">
+					<span class="fa fa-pencil"></span>
+				</div>
+				<div class="myList-itemTitle">
+					<p class="myList-title">this is some kind of font and stuff and lots of words abotu tjiaosjdasoidjas dj</p>
+				</div>
+			</li>
+			<li class="myLists-itemTemplate hide clearfix" data-list="">
+				<div class="myList-itemIcon">
+					<span class="fa fa-list-ul"></span>
+				</div>
+				<div class="myList-itemEdit">
+					<span class="fa fa-pencil"></span>
+				</div>
+				<div class="myList-itemTitle">
+					<p class="myList-title"></p>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<!-- rightSide-->
+	<div class="rightSide">
+		<div class="taskNew">
+			<div class="taskCheckbox">
+				<div class="taskCheckbox-tick">
+					<span class=""></span>
+				</div>
+			</div>
+			<input id="listItem-input" type="text" />
+			<div class="taskNew-options"></div>
+		</div>
+		<ul id="listItems-big">
+			<ul data-list-item="0">
+				<li>item 0.1</li>
+				<li>item 0.2</li>
+			</ul>
+			<ul data-list-item="1">
+				<li>item 1.1</li>
+			</ul>
+		</ul>
+	</div>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
