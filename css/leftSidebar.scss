@@ -27,8 +27,9 @@
 
 .myList-newButton {
 	height: 30px;
-    background-color: #BBB;
-    text-align: center;
+	display: inline;
+	cursor: pointer;
+	margin-left: 20px;
 
     > span {
     	line-height: 30px;
@@ -41,11 +42,20 @@
 	line-height: 30px;
 }
 
+.myList-itemIcon {
+	> .fa-list-ul {
+		color: #AAA;
+	}
+}
+
 .myList-title {
 	@extend .truncate;
+	padding-left: 10px;
+	padding-right: 10px; 
 }
 
 
 .myLists-item {
 	height: 30px;
+	padding-left: 10px;
 }

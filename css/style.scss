@@ -31,6 +31,10 @@ h2 {
 
 .myLists-item {
 	cursor: pointer;
+
+	&.highlight {
+		background-color: #777; 
+	}
 }
 
 .hide {
@@ -41,4 +45,8 @@ h2 {
 	font-weight: bold;
 }
 
+.buttonWrapper {
+	display: inline-block;
+	text-align: left;
+}
 

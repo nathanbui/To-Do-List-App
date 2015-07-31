@@ -21,8 +21,9 @@
 
 .myList-newButton {
   height: 30px;
-  background-color: #BBB;
-  text-align: center; }
+  display: inline;
+  cursor: pointer;
+  margin-left: 20px; }
   .myList-newButton > span {
     line-height: 30px; }
 
@@ -31,8 +32,16 @@
 .myList-itemTitle {
   line-height: 30px; }
 
+.myList-itemIcon > .fa-list-ul {
+  color: #AAA; }
+
+.myList-title {
+  padding-left: 10px;
+  padding-right: 10px; }
+
 .myLists-item {
-  height: 30px; }
+  height: 30px;
+  padding-left: 10px; }
 
 #listItems-big > ul {
   display: none; }
@@ -60,11 +69,17 @@ h2 {
 
 .myLists-item {
   cursor: pointer; }
+  .myLists-item.highlight {
+    background-color: #777; }
 
 .hide {
   display: none; }
 
 .bold {
   font-weight: bold; }
+
+.buttonWrapper {
+  display: inline-block;
+  text-align: left; }
 
 /*# sourceMappingURL=style.css.map */

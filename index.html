@@ -15,15 +15,9 @@
 	<!-- Sidebar-->
 	<div class="sidebar">
 		<h2 class="sideBar-title">My Lists</h2>
-		<div class="myList-newButton">
-			<span class="fa fa-plus"></span>
-			<span class="bold">New List</span>
-		</div>
-		<div class="myList-newForm hide">
-			<input class="myList-newInput">
-		</div>
+		
 		<ul id="myLists">
-			<li class="myLists-item clearfix" data-list="0">
+			<li class="myLists-item clearfix highlight" data-list="0">
 				<div class="myList-itemIcon">
 					<span class="fa fa-list-ul"></span>
 				</div>
@@ -31,7 +25,7 @@
 					<span class="fa fa-pencil"></span>
 				</div>
 				<div class="myList-itemTitle">
-					<p class="myList-title">this is some kind of font and stuff and lots of words abotu tjiaosjdasoidjas dj</p>
+					<p class="myList-title">Shopping</p>
 				</div>
 			</li>
 			<li class="myLists-item clearfix" data-list="1">
@@ -42,7 +36,7 @@
 					<span class="fa fa-pencil"></span>
 				</div>
 				<div class="myList-itemTitle">
-					<p class="myList-title">this is some kind of font and stuff and lots of words abotu tjiaosjdasoidjas dj</p>
+					<p class="myList-title">Personal</p>
 				</div>
 			</li>
 			<li class="myLists-itemTemplate hide clearfix" data-list="">
@@ -57,6 +51,19 @@
 				</div>
 			</li>
 		</ul>
+		<div class="myList-newButton">
+			<span class="fa fa-plus"></span>
+			<span class="bold">New List</span>
+		</div>
+		<div class="myList-newForm hide">
+			<input class="myList-newInput" placeholder="List name" />
+			<div class="buttonWrapper">
+				<button id="myList-confirmButton">Add List</button>
+			</div>
+			<div class="buttonWrapper">
+				<button id="myList-cancelButton">Cancel</button>
+			</div>
+		</div>
 	</div>
 	<!-- rightSide-->
 	<div class="rightSide">
