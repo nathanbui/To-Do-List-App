@@ -14,14 +14,6 @@ p {
 	color: #555;
 }
 
-$orange: #FFAC13;
-$darkOrange: darken($orange, 10%);
-
-@mixin opacity($opacity) {
-	opacity: $opacity;
-	filter: alpha(opacity=$opacity);
-}
-
 .clearfix:after { 
    content: "."; 
    visibility: hidden; 

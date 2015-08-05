@@ -1,6 +1,7 @@
-@import '_normalise';
-@import '_reset';
-@import '_base';
-@import 'leftSidebar';
-@import 'rightSide';
-
+@import 'base/_normalise';
+@import 'base/_reset';
+@import 'base/_base';
+@import 'helpers/_variables';
+@import 'helpers/_mixins';
+@import 'layout/_leftSidebar';
+@import 'layout/_rightSide';
