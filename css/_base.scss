@@ -1,0 +1,58 @@
+div,span,p,h1,h2,h3,h4,h5,h6 {
+	font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+p {
+	color: #555;
+}
+
+$orange: #FFAC13;
+$darkOrange: darken($orange, 10%);
+
+@mixin opacity($opacity) {
+	opacity: $opacity;
+	filter: alpha(opacity=$opacity);
+}
+
+.clearfix:after { 
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
+.truncate {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.hide {
+	display: none;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.buttonWrapper {
+	display: inline-block;
+	text-align: left;
+}
+
+button {	
+	outline: none;
+
+	&:active {
+		outline: none;
+	}
+}

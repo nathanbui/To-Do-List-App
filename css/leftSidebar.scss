@@ -1,7 +1,7 @@
 .sidebar {
 	float: left;
-	width: 250px;
-	background: #DDD;
+	width: 300px;
+	background: #555;
 	min-height: 100vh;
 }
 
@@ -10,52 +10,183 @@
 	margin-top: 15px;
 	margin-bottom: 15px;
 	font-weight: bold;
-	color: #555;
+	color: #FFF;
 }
 
 .myList-itemIcon {
 	float: left;
+	color: #FFF;
 }
 
 .myList-itemEdit {
 	float: right;
+	padding-left: 10px;
+	padding-right: 10px;
+	@include opacity(0.5);
+
+	&:hover {
+		@include opacity(1);
+	}
 }
 
-.myLists-itemTemplate {
+.myList-itemDelete {
+	float: right;
+	@include opacity(0.5);
 
+	&:hover {
+		@include opacity(1);
+	}
 }
+
+.myList-editList-icon {
+	color: #FFF;
+	padding-left: 10px;
+	line-height: 30px;
+	float: left;
+}
+
+.myList-main {
+	cursor: pointer;
+
+	p, .fa {
+		color: #FFF;
+	}
+}
+
+.myList-main {
+	padding-left: 10px;
+
+	&.highlight {
+		background-color: $orange;
+
+		.fa, p {
+			color: #555;
+		}
+	}
+}
+
 
 .myList-newButton {
+	margin-top: 15px;
 	height: 30px;
-	display: inline;
+	display: inline-block;
 	cursor: pointer;
-	margin-left: 20px;
+	margin-left: 10px;
+	color: #FFF;
+	border: 1px solid #FFF;
+    border-radius: 3px;
+    padding: 0px 10px;
 
     > span {
     	line-height: 30px;
+    }
+
+    .subText {
+    	font-weight: bold;
+    	padding-left: 5px;
     }
 }
 
 .myList-itemIcon,
 .myList-itemEdit,
-.myList-itemTitle {
+.myList-itemTitle,
+.myList-itemDelete {
 	line-height: 30px;
-}
-
-.myList-itemIcon {
-	> .fa-list-ul {
-		color: #AAA;
-	}
 }
 
 .myList-title {
 	@extend .truncate;
 	padding-left: 10px;
-	padding-right: 10px; 
+	padding-right: 10px;
 }
 
+.myList-newInput {
+    padding: 6px 10px;
+    border-radius: 2px;
+    border: 1px solid #FFF;
+    width: 258px;
+    margin: auto;
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
 
-.myLists-item {
-	height: 30px;
+    &:focus {
+    	border: 1px solid $orange;
+    	outline: none;
+    }
+}
+
+.myList-newForm {
 	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 15px;
+}
+
+.listItem-checkbox {
+	border-radius: 3px;
+	border: 1px solid;
+	width: 8px;
+	height: 8px;
+}
+
+// buttons
+#myList-confirmButton{
+    background-color: $orange;
+    border: 1px solid $orange;
+    border-radius: 3px;
+    color: white;
+    padding: 6px 10px;
+    text-shadow: 1px 1px $darkOrange;
+    margin-right: 5px;
+}
+
+#myList-cancelButton {
+    background-color: transparent;
+    border: 1px solid #FFF;
+    border-radius: 3px;
+    color: #FFF;
+    padding: 6px 10px;
+}
+
+.myList-editConfirm {
+	background-color: $orange;
+    border: 1px solid $orange;
+    border-radius: 3px;
+    color: white;
+    padding: 6px 10px;
+    text-shadow: 1px 1px $darkOrange;
+    margin-right: 5px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.myList-editCancel {
+    background-color: transparent;
+    border: 1px solid #FFF;
+    border-radius: 3px;
+    color: #FFF;
+    padding: 6px 10px;
+}
+
+.myList-editTitle-wrapper {
+	padding-left: 10px;
+	overflow: hidden;
+    color: #555;
+}
+
+.myList-editTitle {
+	width: 240px;
+    padding: 4px 6px;
+    border-radius: 3px;
+    border: 1px solid #FFF;
+	outline: none;
+
+	&:focus {
+		border: 1px solid $orange;
+	}
+}
+
+.myList-editTemplate {
+	padding-top: 8px;
+    padding-bottom: 8px;
 }

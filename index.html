@@ -17,43 +17,100 @@
 		<h2 class="sideBar-title">My Lists</h2>
 		
 		<ul id="myLists">
-			<li class="myLists-item clearfix highlight" data-list="0">
-				<div class="myList-itemIcon">
-					<span class="fa fa-list-ul"></span>
+			<li class="myLists-item clearfix" data-list="0">
+				<div class="myList-main highlight clearfix">
+					<div class="myList-itemIcon">
+						<span class="fa fa-list-ul"></span>
+					</div>
+					<div class="myList-itemEdit">
+						<span class="fa fa-pencil"></span>
+					</div>
+					<div class="myList-itemDelete">
+						<span class="fa fa-trash-o"></span>
+					</div>
+					<div class="myList-itemTitle">
+						<p class="myList-title">Shopping</p>
+					</div>
 				</div>
-				<div class="myList-itemEdit">
-					<span class="fa fa-pencil"></span>
-				</div>
-				<div class="myList-itemTitle">
-					<p class="myList-title">Shopping</p>
+				<div class="hide myList-editTemplate clearfix">
+					<div class="myList-editList-icon">
+						<span class="fa fa-list-ul"></span>
+					</div>
+					<div class="myList-editTitle-wrapper">
+						<input class="myList-editTitle" type="text" />
+					</div>
+					<div class="buttonWrapper">
+						<button class="myList-editConfirm">Save</button>
+					</div>
+					<div class="buttonWrapper">
+						<button class="myList-editCancel">Cancel</button>
+					</div>
 				</div>
 			</li>
-			<li class="myLists-item clearfix" data-list="1">
-				<div class="myList-itemIcon">
-					<span class="fa fa-list-ul"></span>
+			<li class="myLists-item" data-list="1">
+				<div class="myList-main clearfix">
+					<div class="myList-itemIcon">
+						<span class="fa fa-list-ul"></span>
+					</div>
+					<div class="myList-itemEdit">
+						<span class="fa fa-pencil"></span>
+					</div>
+					<div class="myList-itemDelete">
+						<span class="fa fa-trash-o"></span>
+					</div>
+					<div class="myList-itemTitle">
+						<p class="myList-title">Personal</p>
+					</div>
 				</div>
-				<div class="myList-itemEdit">
-					<span class="fa fa-pencil"></span>
-				</div>
-				<div class="myList-itemTitle">
-					<p class="myList-title">Personal</p>
+				<div class="hide myList-editTemplate clearfix">
+					<div class="myList-editList-icon">
+						<span class="fa fa-list-ul"></span>
+					</div>
+					<div class="myList-editTitle-wrapper">
+						<input class="myList-editTitle" type="text" />
+					</div>
+					<div class="buttonWrapper">
+						<button class="myList-editConfirm">Save</button>
+					</div>
+					<div class="buttonWrapper">
+						<button class="myList-editCancel">Cancel</button>
+					</div>
 				</div>
 			</li>
-			<li class="myLists-itemTemplate hide clearfix" data-list="">
-				<div class="myList-itemIcon">
-					<span class="fa fa-list-ul"></span>
+			<li class="myLists-itemTemplate hide" data-list="">
+				<div class="myList-main clearfix">
+					<div class="myList-itemIcon">
+						<span class="fa fa-list-ul"></span>
+					</div>
+					<div class="myList-itemEdit">
+						<span class="fa fa-pencil"></span>
+					</div>
+					<div class="myList-itemDelete">
+						<span class="fa fa-trash-o"></span>
+					</div>
+					<div class="myList-itemTitle">
+						<p class="myList-title"></p>
+					</div>
 				</div>
-				<div class="myList-itemEdit">
-					<span class="fa fa-pencil"></span>
-				</div>
-				<div class="myList-itemTitle">
-					<p class="myList-title"></p>
+				<div class="hide myList-editTemplate clearfix">
+					<div class="myList-editList-icon">
+						<span class="fa fa-list-ul"></span>
+					</div>
+					<div class="myList-editTitle-wrapper">
+						<input class="myList-editTitle" type="text" />
+					</div>
+					<div class="buttonWrapper">
+						<button class="myList-editConfirm">Save</button>
+					</div>
+					<div class="buttonWrapper">
+						<button class="myList-editCancel">Cancel</button>
+					</div>
 				</div>
 			</li>
 		</ul>
 		<div class="myList-newButton">
 			<span class="fa fa-plus"></span>
-			<span class="bold">New List</span>
+			<span class="subText">New List</span>
 		</div>
 		<div class="myList-newForm hide">
 			<input class="myList-newInput" placeholder="List name" />
@@ -78,11 +135,19 @@
 		</div>
 		<ul id="listItems-big">
 			<ul data-list-item="0">
-				<li>item 0.1</li>
-				<li>item 0.2</li>
+				<li class="listItem-single clearfix">
+					<div class="listItem-checkbox"></div>
+					<div class="listItem-remove">
+						<span class="fa fa-trash-o"></span>
+					</div>
+					<div class="listItem-textWrapper">
+						<span class="listItem-text">Bread</span>
+					</div>
+				</li>
+				<li class="listItem-single clearfix">Eggs</li>
 			</ul>
 			<ul data-list-item="1">
-				<li>item 1.1</li>
+				<li>Replace light bulb</li>
 			</ul>
 		</ul>
 	</div>
