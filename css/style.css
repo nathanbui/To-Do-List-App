@@ -411,6 +411,9 @@ h2 {
 p {
   color: #555; }
 
+* {
+  box-sizing: border-box; }
+
 .clearfix:after {
   content: ".";
   visibility: hidden;
@@ -502,10 +505,13 @@ button {
   border-radius: 3px;
   padding: 0px 10px; }
   .myList-newButton > span {
-    line-height: 30px; }
+    line-height: 30px;
+    top: -1px;
+    position: relative; }
   .myList-newButton .subText {
-    font-weight: bold;
-    padding-left: 5px; }
+    padding-left: 5px;
+    position: relative;
+    top: -2px; }
 
 .myList-itemIcon,
 .myList-itemEdit,
@@ -519,10 +525,8 @@ button {
 
 .myList-newInput {
   padding: 6px 10px;
-  border-radius: 2px;
   border: 1px solid #FFF;
-  width: 258px;
-  margin: auto;
+  width: 100%;
   display: block;
   margin-bottom: 10px;
   color: #555; }
@@ -583,7 +587,6 @@ button {
 .myList-editTitle {
   width: 240px;
   padding: 4px 6px;
-  border-radius: 3px;
   border: 1px solid #FFF;
   outline: none; }
   .myList-editTitle:focus {
@@ -591,26 +594,107 @@ button {
 
 .myList-editTemplate {
   padding-top: 8px;
-  padding-bottom: 8px; }
+  padding-bottom: 8px;
+  background-color: #777; }
+
+.myList-empty {
+  color: #FFF;
+  margin-bottom: 10px;
+  text-align: center; }
 
 .rightSide {
   overflow: hidden;
-  padding-left: 15px; }
+  padding-left: 15px;
+  padding-right: 15px; }
 
 #listItems-big > ul {
-  display: none; }
+  display: none;
+  margin-bottom: 10px; }
 
 .listItem-remove {
   float: right; }
 
 .listItem-textWrapper {
-  overflow: hidden; }
+  overflow: hidden;
+  padding: 5px; }
+
+.listItem-group {
+  border-bottom: 1px solid #EEE; }
+
+.listItem-text {
+  color: #555; }
 
 .listItem-checkbox {
   border-radius: 3px;
-  border: 1px solid;
-  width: 8px;
-  height: 8px;
-  float: left; }
+  border: 1px solid #ABABAB;
+  width: 15px;
+  height: 15px;
+  float: left;
+  cursor: pointer;
+  margin-right: 5px;
+  margin-top: 5px; }
+
+.listItem-newButton {
+  height: 30px;
+  display: inline-block;
+  cursor: pointer;
+  color: #555;
+  border: 1px solid #555;
+  border-radius: 3px;
+  padding: 0px 10px; }
+  .listItem-newButton > span {
+    line-height: 30px;
+    top: -1px;
+    position: relative; }
+  .listItem-newButton .subText {
+    padding-left: 5px;
+    position: relative;
+    top: -2px; }
+
+#listItem-confirm {
+  background-color: #FFAC13;
+  border: 1px solid #FFAC13;
+  border-radius: 3px;
+  color: #FFF;
+  padding: 6px 10px;
+  text-shadow: 1px 1px #df9100;
+  margin-right: 5px; }
+
+#listItem-cancel {
+  background-color: transparent;
+  border: 1px solid #555;
+  border-radius: 3px;
+  color: #555;
+  padding: 6px 10px; }
+
+#listItem-input {
+  padding: 6px 10px;
+  border: 1px solid #555;
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  color: #555; }
+  #listItem-input:focus {
+    border: 1px solid #FFAC13;
+    outline: none; }
+
+.listItem-group {
+  overflow: hidden; }
+
+.listItem-title {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #555;
+  margin-top: 15px;
+  margin-bottom: 18px; }
+
+.listItem-remove {
+  margin-top: 5px;
+  cursor: pointer;
+  opacity: 0.5;
+  filter: alpha(opacity=0.5); }
+  .listItem-remove:hover {
+    opacity: 1;
+    filter: alpha(opacity=1); }
 
 /*# sourceMappingURL=style.css.map */

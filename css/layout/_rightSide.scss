@@ -1,11 +1,13 @@
 .rightSide {
 	overflow: hidden;
 	padding-left: 15px;
+	padding-right: 15px;
 }
 
 #listItems-big {
 	> ul {
 		display: none;
+		margin-bottom: 10px;
 	}
 }
 
@@ -15,12 +17,100 @@
 
 .listItem-textWrapper {
 	overflow: hidden;
+	padding: 5px;
+}
+
+.listItem-group {
+	border-bottom: 1px solid #EEE;
+}
+
+.listItem-text {
+	color: #555;
 }
 
 .listItem-checkbox {
-	border-radius: 3px;
-	border: 1px solid;
-	width: 8px;
-	height: 8px;
-	float: left;
+    border-radius: 3px;
+    border: 1px solid #ABABAB;
+    width: 15px;
+    height: 15px;
+    float: left;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.listItem-newButton {
+	height: 30px;
+	display: inline-block;
+	cursor: pointer;
+	color: #555;
+	border: 1px solid #555;
+    border-radius: 3px;
+    padding: 0px 10px;
+
+    > span {
+    	line-height: 30px;
+		top: -1px;
+		position: relative;
+    }
+
+    .subText {
+    	padding-left: 5px;
+    	position: relative;
+    	top: -2px;
+    }
+}
+
+#listItem-confirm {
+    background-color: $orange;
+    border: 1px solid $orange;
+    border-radius: 3px;
+    color: #FFF;
+    padding: 6px 10px;
+    text-shadow: 1px 1px $darkOrange;
+    margin-right: 5px;
+}
+
+#listItem-cancel {
+	background-color: rgba(0,0,0,0);
+    border: 1px solid #555;
+    border-radius: 3px;
+    color: #555;
+    padding: 6px 10px;
+}
+
+#listItem-input {
+	padding: 6px 10px;
+    border: 1px solid #555;
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+
+    &:focus {
+    	border: 1px solid $orange;
+    	outline: none;
+    }
+}
+
+.listItem-group {
+	overflow: hidden;
+}
+
+.listItem-title {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #555;
+    margin-top: 15px;
+    margin-bottom: 18px;
+}
+
+.listItem-remove {
+	margin-top: 5px; 
+	cursor: pointer;
+	@include opacity(0.5);
+	
+	&:hover {
+		@include opacity(1);
+	}
 }

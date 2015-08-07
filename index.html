@@ -15,7 +15,7 @@
 	<!-- Sidebar-->
 	<div class="sidebar">
 		<h2 class="sideBar-title">My Lists</h2>
-		
+		<p class="myList-empty hide">Get started by creating a new list.</p>
 		<ul id="myLists">
 			<li class="myLists-item clearfix" data-list="0">
 				<div class="myList-main highlight clearfix">
@@ -124,32 +124,75 @@
 	</div>
 	<!-- rightSide-->
 	<div class="rightSide">
-		<div class="taskNew">
-			<div class="taskCheckbox">
-				<div class="taskCheckbox-tick">
-					<span class=""></span>
-				</div>
-			</div>
-			<input id="listItem-input" type="text" />
-			<div class="taskNew-options"></div>
-		</div>
 		<ul id="listItems-big">
+			<h3 class="listItem-title"></h3>
 			<ul data-list-item="0">
 				<li class="listItem-single clearfix">
 					<div class="listItem-checkbox"></div>
-					<div class="listItem-remove">
-						<span class="fa fa-trash-o"></span>
-					</div>
-					<div class="listItem-textWrapper">
-						<span class="listItem-text">Bread</span>
+					<div class="listItem-group clearfix">
+						<div class="listItem-remove">
+							<span class="fa fa-trash-o"></span>
+						</div>
+						<div class="listItem-textWrapper">
+							<span class="listItem-text">Bread</span>
+						</div>
 					</div>
 				</li>
-				<li class="listItem-single clearfix">Eggs</li>
+				<li class="listItem-single clearfix">
+					<div class="listItem-checkbox"></div>
+					<div class="listItem-group clearfix">
+						<div class="listItem-remove">
+							<span class="fa fa-trash-o"></span>
+						</div>
+						<div class="listItem-textWrapper">
+							<span class="listItem-text">Eggs</span>
+						</div>
+					</div>
+				</li>
 			</ul>
 			<ul data-list-item="1">
-				<li>Replace light bulb</li>
+				<li class="listItem-single clearfix">
+					<div class="listItem-checkbox"></div>
+					<div class="listItem-group clearfix">
+						<div class="listItem-remove">
+							<span class="fa fa-trash-o"></span>
+						</div>
+						<div class="listItem-textWrapper">
+							<span class="listItem-text">Replace light bulb</span>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<!--template-->
+			<ul class="hide">
+				<li class="listItem-single clearfix listItem-singleTemplate">
+					<div class="listItem-checkbox"></div>
+					<div class="listItem-group clearfix">
+						<div class="listItem-remove">
+							<span class="fa fa-trash-o"></span>
+						</div>
+						<div class="listItem-textWrapper">
+							<span class="listItem-text"></span>
+						</div>
+					</div>
+				</li>
 			</ul>
 		</ul>
+		<div class="taskNew">
+			<div class="listItem-form hide">
+				<input id="listItem-input" type="text" placeholder="Enter a new item" />
+				<div class="buttonWrapper">
+					<button id="listItem-confirm">Add Item</button>
+				</div>
+				<div class="buttonWrapper">
+					<button id="listItem-cancel">Cancel</button>
+				</div>
+			</div>
+			<div class="listItem-newButton">
+				<span class="fa fa-plus"></span>
+				<span class="subText">New Item</span>
+			</div>
+		</div>
 	</div>
 	<script type="text/javascript" src="js/script.js"></script>
 </body>
